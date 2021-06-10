@@ -1,7 +1,6 @@
 package org.juc;
 
 import java.util.concurrent.locks.LockSupport;
-import java.util.stream.Stream;
 
 public class A1B2 {
     private char[] a = "abcdefg".toCharArray();
