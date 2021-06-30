@@ -24,7 +24,12 @@ public class DK {
         return dk;
     }
 
-
+    /**
+     * 1.先将前K个数给复制出来，排好序，放在LinkedList中（）
+     * 2.将数组中剩下的数据循环，比list中小的数据就不考虑了
+     *  把比list中最小的数据大的数，在遍历list的时候，塞进对应位置，且把list的最小数移除
+     * 3.返回list最小数，就是我们要找的数
+     */
     public int getNoK(int[] arr,int k){
         int[] ks = new int[k];
         //把前k个复制出来一个新数组
